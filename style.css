@@ -160,7 +160,7 @@ nav ul li a:hover::after {
 
 /* SKILLS */
 #skils {
-  padding: 80px;
+  padding: 40px;
   color: #020202;
 }
 .for-row {
@@ -168,7 +168,6 @@ nav ul li a:hover::after {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-items: center;
   flex-direction: column;
   gap: 2rem;
 }
@@ -187,7 +186,9 @@ nav ul li a:hover::after {
   max-width: 25rem;
   padding-bottom: 1rem;
 }
-
+.c{
+ margin:auto;
+}
 /* .col-1 {
   flex-basis: 35%;
 }
