@@ -320,7 +320,9 @@ span {
     right: 0;
   }
 }
-
+.project{
+  margin-left:50px;
+}
 @keyframes hamburgerNavAnimateClose {
   from {
     right: 0%;
