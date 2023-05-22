@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff;
+  color: #020202;
+  overflow-x: hidden;
+}
+
+#header {
+  width: 100vw;
+
+  min-height: 100vh;
+  background-image: url(bgc.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 100px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #070707;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a {
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Hamburger Button */
+.hamburger {
+  display: none;
+  stroke: #fff;
+}
+
+/* Hamburger Nav */
+.hamburger-nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  min-height: 100vh;
+  height: 100%;
+  overflow-y: scroll;
+  padding: 10% 5%;
+}
+.hamburger-nav button {
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  border: none;
+  background-color: transparent;
+}
+
+.hamburger-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.header text {
+  margin-top: 20%;
+  font-size: 30px;
+}
+.header text h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+.header text h1 span {
+  color: aqua;
+}
+
+/* ABOUT */
+#ABOUT {
+  margin: 80px 0;
+  color: #0f0e0e;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.about-col-1 {
+  flex-basis: 35%;
+}
+.about-col-1 img {
+  width: 100%;
+}
+.about-col-2 {
+  flex-basis: 60%;
+}
+.sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: indigo;
+}
+.paragraph {
+  color: sienna;
+}
+
+/* EDUCATION */
+#EDUCATION {
+  margin: 80px 0;
+  color: #0f0e0e;
+}
+.about-row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.about-row img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1rem;
+}
+
+.about-row div {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.su-title {
+  font-size: 50px;
+  font-weight: 600;
+  color: indigo;
+  margin-left: 5%;
+}
+
+/* SKILLS */
+#skils {
+  padding: 80px;
+  color: #020202;
+}
+.for-row {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.for-row > div {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.for-row > div > div {
+  flex-basis: 35%;
+  text-align: center;
+}
+
+.for-row img {
+  width: 70%;
+  max-width: 25rem;
+  padding-bottom: 1rem;
+}
+
+/* .col-1 {
+  flex-basis: 35%;
+}
+.col-1 img {
+  width: 30%;
+  display: block;
+
+  margin-left: 30%;
+}
+.col-1 h2 {
+  margin-left: 30%;
+} */
+.sec-title {
+  font-size: 50px;
+  font-weight: 600;
+  color: indigo;
+  margin-left: 5%;
+}
+/* .col-2 {
+  flex-basis: 35%;
+}
+.col-2 img {
+  width: 30%;
+  margin-right: 30%;
+}
+.col-2 h2 {
+  margin-right: 30%;
+} */
+#SKILLS {
+  margin: 60px 0;
+  color: #020202;
+}
+.this-title {
+  font-size: 50px;
+  font-weight: 600;
+  color: indigo;
+  margin-left: 5%;
+}
+h3 {
+  margin-left: 10%;
+}
+form label,
+form input,
+form textarea,
+form button {
+  display: block;
+  margin-bottom: 20px;
+  margin-left: 10%;
+}
+.con-title {
+  font-size: 50px;
+  font-weight: 600;
+  color: indigo;
+  margin-left: 5%;
+}
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.social-media a img {
+  width: 20px;
+  height: 30px;
+  margin-left: 10%;
+}
+
+span {
+  color: rgb(242, 0, 255);
+}
+.header-text {
+  margin-top: 100px;
+}
+.button {
+  border-radius: 40%;
+  width: 100px;
+  background-color: papayawhip;
+}
+.profile {
+  border-radius: 50%;
+  box-shadow: 0px 10px 18px 0px rgb(242, 0, 255), 0px 6px 24px 0px black;
+}
+
+@media only screen and (max-width: 560px) {
+  .for-row > div {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .about-row {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    gap: 4rem;
+  }
+}
+
+/* Hiding scrollbar for hamburger nav */
+/* Chrome, Safari and Opera */
+.hamburger-nav::-webkit-scrollbar {
+  display: none;
+}
+
+/* IE, Edge and Firefox */
+.hamburger-nav {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@keyframes hamburgerNavAnimateOpen {
+  to {
+    right: 0;
+  }
+}
+
+@keyframes hamburgerNavAnimateClose {
+  from {
+    right: 0%;
+  }
+  to {
+    right: -100%;
+  }
+}
